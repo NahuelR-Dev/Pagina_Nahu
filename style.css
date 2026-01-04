@@ -39,7 +39,6 @@ body{
     height: 100px;
     border-radius: 100%;
     overflow: hidden;
-    margin-bottom: 9px;
     border: 2px solid #00e5ff;
 }
 
@@ -49,3 +48,77 @@ body{
 }
 
 
+
+.tablas{
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.tabla{
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    background: #1c1c1c;
+    color: white;
+    font-size: 13px;
+}
+
+
+.tabla.activa {
+    background: linear-gradient(135deg, #00e5ff, #00ff9d);
+    color: #000;
+}
+
+.panel{
+    display: none;
+}
+
+
+.panel.activo{
+    display: block;
+}
+
+.row {
+  display: flex;
+  gap: 14px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
+
+.carta-h {
+  min-width: 260px;
+  background: #111;
+  border-radius: 16px;
+  display: flex;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.carta-h img {
+  width: 90px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.carta-h .info {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carta-h h3 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.rating {
+  color: #00f0ff;
+  font-size: 13px;
+}
