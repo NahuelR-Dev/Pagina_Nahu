@@ -31,4 +31,22 @@ body{
     color: #b3b3b3;
 }
 
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 9px;
+    border: 2px solid #00e5ff;
+}
+
+.avatar img{
+    width: 109%;
+    height: 101%;
+    
+
+
+
+}
+
 
