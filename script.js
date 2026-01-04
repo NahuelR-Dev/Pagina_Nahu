@@ -19,3 +19,32 @@ tables.forEach(tab => {
   });
 });
 
+
+
+
+
+emailjs.init("w6b79JwFVUFQ501dc");
+
+const form = document.getElementById("recomendacion-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_lmv0ywd",
+    "template_zoh0akh",
+    this
+  ).then(
+    () => {
+      alert("¡Recomendación enviada! 🔥");
+      form.reset();
+    },
+    (error) => {
+      console.log(error);
+      alert("Error al enviar 😢");
+    }
+  );
+});
+
+
+
